@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0px;
     box-sizing: border-box;
-    list-style: none;
+
 }
 body{
     
@@ -10,15 +10,50 @@ body{
 
 .main-content{
     min-height: 950px;
-    width: 90%;
-     justify-content: center;
-    margin-bottom: 10px;
+    width: 100%;
+    margin: 30px;
     display: grid;
     grid-template-columns: 300px 700px;
+    justify-content: center;
+    margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+}
+@media only screen and (max-width : 1050px){
+    .main-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 250px 550px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    
+    }
+}
+@media only screen and (max-width : 850px){
+    .main-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 250px 550px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    
+    }
 }
 @media only  screen and (max-width: 700px) {
     .main-content{
+        width: 100%;
+        display: grid;
+
       grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+      
     }
 }
 
@@ -27,8 +62,8 @@ section{
 }
 .left-sections{
     background-color:#003147;
-   
-
+    height: 100%;  
+ 
 }
 .left-content{
     padding: 1rem;
@@ -37,12 +72,13 @@ section{
 
 }
 .profile-img{
-    width: 50%;
+    width: 10rem;
+    height: 10rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid white;
-    border-radius: 30%;
+    border: .5rem solid white;
+    border-radius: 10rem;
 }
 .name{
     font-size: 1.2rem;
@@ -143,14 +179,16 @@ div.icn{
     color: white;
 }
 .javaa{width: 90%; background-color: #04AA6D;}
-.js{width: 70%; background-color: #4404aa;}
-.react{width: 70%; background-color: violet;}
-.html{width: 80%; background-color: #03a9f4;}
+.js{width: 70%; background-color: hwb(125 5% 14%);}
+.react{width: 80%; background-color:violet;}
+.html{width: 80%; background-color: hsl(327, 98%, 48%);}
 .android{width: 60%; background-color:tomato;}
 .right-sections{
     color: red;
+    background-color: #ddd;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
 }
 .right-title{
     font-size: 25px;
